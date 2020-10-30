@@ -29,7 +29,7 @@ public class EmailPage {
         PageFactory.initElements(driver, this);
     }
 
-    public String getAdress() {
+    public String getAddress() {
         new WebDriverWait(driver, 10)
                 .until(ExpectedConditions.attributeToBeNotEmpty(emailAdress, "value"));
         return emailAdress.getAttribute("value");

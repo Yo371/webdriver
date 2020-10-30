@@ -67,7 +67,7 @@ public class TestGoogleCalculator {
 
         EmailPage emailPage = new EmailPage(driver);
 
-        String emailAddress = emailPage.getAdress();
+        String emailAddress = emailPage.getAddress();
         driver.switchTo().window(handles.get(0));
 
         calculatorGooglePage.switchFrame().sendToEmail(emailAddress);
